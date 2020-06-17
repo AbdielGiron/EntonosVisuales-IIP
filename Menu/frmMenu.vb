@@ -70,4 +70,7 @@ Public Class frmMenu
         frm.Show()
     End Sub
 
+    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+        abrirFormulario(frmArreglos)
+    End Sub
 End Class

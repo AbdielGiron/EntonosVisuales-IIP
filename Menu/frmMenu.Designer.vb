@@ -30,8 +30,6 @@ Partial Class frmMenu
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.PanelLateral = New System.Windows.Forms.Panel()
         Me.btnMenu = New System.Windows.Forms.PictureBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnProductos = New System.Windows.Forms.Button()
         Me.PanelForms = New System.Windows.Forms.Panel()
         Me.TimerOcultarMenu = New System.Windows.Forms.Timer(Me.components)
@@ -123,8 +121,6 @@ Partial Class frmMenu
         '
         Me.PanelLateral.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PanelLateral.Controls.Add(Me.btnMenu)
-        Me.PanelLateral.Controls.Add(Me.Button2)
-        Me.PanelLateral.Controls.Add(Me.Button1)
         Me.PanelLateral.Controls.Add(Me.btnProductos)
         Me.PanelLateral.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelLateral.Location = New System.Drawing.Point(0, 40)
@@ -144,42 +140,6 @@ Partial Class frmMenu
         Me.btnMenu.TabIndex = 3
         Me.btnMenu.TabStop = False
         '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Image = Global.Menu.My.Resources.Resources.empleados
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(-11, 289)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(212, 45)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Empleados"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Image = Global.Menu.My.Resources.Resources.clientes
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(-12, 238)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(212, 45)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Clientes"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'btnProductos
         '
         Me.btnProductos.BackColor = System.Drawing.Color.Transparent
@@ -187,20 +147,17 @@ Partial Class frmMenu
         Me.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnProductos.ForeColor = System.Drawing.Color.White
-        Me.btnProductos.Image = Global.Menu.My.Resources.Resources.producto
-        Me.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnProductos.Location = New System.Drawing.Point(-12, 197)
+        Me.btnProductos.Location = New System.Drawing.Point(0, 200)
         Me.btnProductos.Name = "btnProductos"
-        Me.btnProductos.Size = New System.Drawing.Size(212, 45)
+        Me.btnProductos.Size = New System.Drawing.Size(164, 45)
         Me.btnProductos.TabIndex = 0
-        Me.btnProductos.Text = "Productos"
-        Me.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnProductos.Text = "Arreglos"
         Me.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnProductos.UseVisualStyleBackColor = False
         '
         'PanelForms
         '
-        Me.PanelForms.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PanelForms.Cursor = System.Windows.Forms.Cursors.Default
         Me.PanelForms.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelForms.Location = New System.Drawing.Point(165, 40)
         Me.PanelForms.Name = "PanelForms"
@@ -242,7 +199,5 @@ Partial Class frmMenu
     Friend WithEvents TimerOcultarMenu As Timer
     Friend WithEvents TimerMostrar As Timer
     Friend WithEvents btnProductos As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents btnMenu As PictureBox
 End Class
