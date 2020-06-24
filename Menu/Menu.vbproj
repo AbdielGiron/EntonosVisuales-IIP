@@ -73,10 +73,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEntregaBolsaSolidaria.Designer.vb">
+      <DependentUpon>frmEntregaBolsaSolidaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntregaBolsaSolidaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmArreglos.Designer.vb">
       <DependentUpon>frmArreglos.vb</DependentUpon>
     </Compile>
     <Compile Include="frmArreglos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLibretaAhorro.Designer.vb">
+      <DependentUpon>frmLibretaAhorro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLibretaAhorro.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenu.vb">
@@ -86,10 +98,18 @@
       <DependentUpon>frmMenu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmTotalDatosBeneficiario.Designer.vb">
+      <DependentUpon>frmTotalDatosBeneficiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTotalDatosBeneficiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -103,11 +123,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmEntregaBolsaSolidaria.resx">
+      <DependentUpon>frmEntregaBolsaSolidaria.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmArreglos.resx">
       <DependentUpon>frmArreglos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLibretaAhorro.resx">
+      <DependentUpon>frmLibretaAhorro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTotalDatosBeneficiario.resx">
+      <DependentUpon>frmTotalDatosBeneficiario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

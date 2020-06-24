@@ -29,8 +29,9 @@ Partial Class frmMenu
         Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.PanelLateral = New System.Windows.Forms.Panel()
+        Me.btnBolsaSolidaria = New System.Windows.Forms.Button()
         Me.btnMenu = New System.Windows.Forms.PictureBox()
-        Me.btnProductos = New System.Windows.Forms.Button()
+        Me.btnAreglos = New System.Windows.Forms.Button()
         Me.PanelForms = New System.Windows.Forms.Panel()
         Me.TimerOcultarMenu = New System.Windows.Forms.Timer(Me.components)
         Me.TimerMostrar = New System.Windows.Forms.Timer(Me.components)
@@ -120,13 +121,29 @@ Partial Class frmMenu
         'PanelLateral
         '
         Me.PanelLateral.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.PanelLateral.Controls.Add(Me.btnBolsaSolidaria)
         Me.PanelLateral.Controls.Add(Me.btnMenu)
-        Me.PanelLateral.Controls.Add(Me.btnProductos)
+        Me.PanelLateral.Controls.Add(Me.btnAreglos)
         Me.PanelLateral.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelLateral.Location = New System.Drawing.Point(0, 40)
         Me.PanelLateral.Name = "PanelLateral"
         Me.PanelLateral.Size = New System.Drawing.Size(165, 520)
         Me.PanelLateral.TabIndex = 1
+        '
+        'btnBolsaSolidaria
+        '
+        Me.btnBolsaSolidaria.BackColor = System.Drawing.Color.Transparent
+        Me.btnBolsaSolidaria.FlatAppearance.BorderSize = 0
+        Me.btnBolsaSolidaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBolsaSolidaria.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBolsaSolidaria.ForeColor = System.Drawing.Color.White
+        Me.btnBolsaSolidaria.Location = New System.Drawing.Point(1, 251)
+        Me.btnBolsaSolidaria.Name = "btnBolsaSolidaria"
+        Me.btnBolsaSolidaria.Size = New System.Drawing.Size(164, 45)
+        Me.btnBolsaSolidaria.TabIndex = 4
+        Me.btnBolsaSolidaria.Text = "Bolsa Solidaria"
+        Me.btnBolsaSolidaria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnBolsaSolidaria.UseVisualStyleBackColor = False
         '
         'btnMenu
         '
@@ -140,20 +157,20 @@ Partial Class frmMenu
         Me.btnMenu.TabIndex = 3
         Me.btnMenu.TabStop = False
         '
-        'btnProductos
+        'btnAreglos
         '
-        Me.btnProductos.BackColor = System.Drawing.Color.Transparent
-        Me.btnProductos.FlatAppearance.BorderSize = 0
-        Me.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProductos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnProductos.ForeColor = System.Drawing.Color.White
-        Me.btnProductos.Location = New System.Drawing.Point(0, 200)
-        Me.btnProductos.Name = "btnProductos"
-        Me.btnProductos.Size = New System.Drawing.Size(164, 45)
-        Me.btnProductos.TabIndex = 0
-        Me.btnProductos.Text = "Arreglos"
-        Me.btnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnProductos.UseVisualStyleBackColor = False
+        Me.btnAreglos.BackColor = System.Drawing.Color.Transparent
+        Me.btnAreglos.FlatAppearance.BorderSize = 0
+        Me.btnAreglos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAreglos.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAreglos.ForeColor = System.Drawing.Color.White
+        Me.btnAreglos.Location = New System.Drawing.Point(0, 200)
+        Me.btnAreglos.Name = "btnAreglos"
+        Me.btnAreglos.Size = New System.Drawing.Size(164, 45)
+        Me.btnAreglos.TabIndex = 0
+        Me.btnAreglos.Text = "Arreglos"
+        Me.btnAreglos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnAreglos.UseVisualStyleBackColor = False
         '
         'PanelForms
         '
@@ -198,6 +215,7 @@ Partial Class frmMenu
     Friend WithEvents btnRestaurar As Button
     Friend WithEvents TimerOcultarMenu As Timer
     Friend WithEvents TimerMostrar As Timer
-    Friend WithEvents btnProductos As Button
+    Friend WithEvents btnAreglos As Button
     Friend WithEvents btnMenu As PictureBox
+    Friend WithEvents btnBolsaSolidaria As Button
 End Class

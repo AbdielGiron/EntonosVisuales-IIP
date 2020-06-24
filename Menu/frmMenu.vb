@@ -70,7 +70,11 @@ Public Class frmMenu
         frm.Show()
     End Sub
 
-    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+    Private Sub btnAreglos_Click(sender As Object, e As EventArgs) Handles btnAreglos.Click
         abrirFormulario(frmArreglos)
+    End Sub
+
+    Private Sub btnLibretaAhorros_Click(sender As Object, e As EventArgs) Handles btnBolsaSolidaria.Click
+        abrirFormulario(frmEntregaBolsaSolidaria)
     End Sub
 End Class
